@@ -1,14 +1,11 @@
-
 .topnav {
     background-color: #3e3e3e;
     overflow: hidden;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    margin-bottom: 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 
@@ -50,4 +47,10 @@
 .navlinks a.active1:hover {
     background-color: #f2f2f2;
     color: #313131;
+}
+
+
+body {
+    margin: 0;
+    padding-top: 60px; /* adjust to navbar height */
 }
