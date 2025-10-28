@@ -131,4 +131,13 @@ body {
     grid-row-start: 3;
     background-color: #8FAFCF;
 }
-        
+
+.Aboutbox#arty{
+    width: 500px;
+    background-color: #8FAFCF;
+}
+
+.Aboutbox#harrison{
+    width: 500px;
+    background-color: #8FAFCF;
+}
