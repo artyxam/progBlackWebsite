@@ -1,0 +1,53 @@
+
+.topnav {
+    background-color: #3e3e3e;
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-bottom: 30px;
+}
+
+
+.title{
+    float: left;
+    padding-left: 10px;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;}
+
+
+    
+.navlinks {
+    float: right;
+}
+
+.navlinks a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navlinks a:hover {
+    background-color: #f2f2f2;
+    color: #3e3e3e;
+}
+
+/* Add a color to the active/current link */
+.navlinks a.active1 {
+    background-color: #313131;
+    color: #f2f2f2;
+}
+
+.navlinks a.active1:hover {
+    background-color: #f2f2f2;
+    color: #313131;
+}
