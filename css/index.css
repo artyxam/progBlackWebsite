@@ -1,5 +1,5 @@
 .topnav {
-    background-color: #3e3e3e;
+    background-color: #1e293b;
     overflow: hidden;
     width: 100%;
     position: fixed;
@@ -12,45 +12,198 @@
 .title{
     float: left;
     padding-left: 10px;
-    color: #f2f2f2;
+    color: #f1f5f9;
     text-align: center;
     text-decoration: none;
     font-size: 17px;}
 
-
-    
 .navlinks {
     float: right;
 }
 
 .navlinks a {
     float: left;
-    color: #f2f2f2;
+    color: #f1f5f9;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 
-/* Change the color of links on hover */
 .navlinks a:hover {
-    background-color: #f2f2f2;
-    color: #3e3e3e;
+    background-color: #1e293b;
+    color: #f1f5f9;
 }
 
-/* Add a color to the active/current link */
 .navlinks a.active1 {
-    background-color: #313131;
-    color: #f2f2f2;
+    background-color: #f1f5f9;
+    color: #1e293b;
 }
 
 .navlinks a.active1:hover {
-    background-color: #f2f2f2;
-    color: #313131;
+    background-color: #1e293b;
+    color: #f1f5f9;
 }
 
 
 body {
     margin: 0;
-    padding-top: 60px; /* adjust to navbar height */
+    padding: 0px;  
+    padding-top: 60px;
+    text-align: center;
+    background-position: center;
+}
+
+
+.parent {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+    outline: 2px solid rgba(0,0,0,0.1);
+}
+    
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    background-color: #8FAFCF;
+}
+.div1 p{
+    padding: 20px;
+}
+
+
+.div2 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    background-color: #8FAFCF;
+}
+.div2 img, .div1 img, .div3 img, .div4 img, .div5 img, .div6 img, .div7 img, .div8 img, .div9 img, .div10 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.div3 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    background-color: #8FAFCF;
+}
+
+.div4 {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    background-color: #8FAFCF;
+}
+
+.div5 {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    background-color: #8FAFCF;
+}
+
+.div6 {
+    grid-row-start: 3;
+    background-color: #8FAFCF;
+}
+
+.div7 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+    background-color: #8FAFCF;
+}
+
+.div8 {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    background-color: #8FAFCF;
+}
+
+.div9 {
+    grid-column-start: 4;
+    grid-row-start: 4;
+    background-color: #8FAFCF;
+}
+
+.div10 {
+    grid-column-start: 4;
+    grid-row-start: 3;
+    background-color: #8FAFCF;
+}
+
+p, h1, h2, h3, h4, h5, h6, li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+        
+.Aboutbox#arty{
+    width: 500px;
+    background-color: #8FAFCF;
+}
+
+.Aboutbox#harrison{
+    width: 500px;
+    background-color: #8FAFCF;
+}
+
+a svg {
+    fill: black;
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px; 
+}
+
+.Aboutbox {
+    width: 45%; 
+    background-color: #f0f0f0; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.link a {
+    margin-right: 10px;
+}
+
+.collapsible {
+  background-color: #4E81B3;
+  color: #f1f5f9;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #315273;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: #f1f5f9;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content1 {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #315273;
 }

@@ -3,13 +3,13 @@
 <head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample HTML Page</title>
+    <title>Home - Computing Applications</title>
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
     <div class="topnav">
         <div class="title">
-            <p>Computing Applications</p>
+            <p>Computing Applications - Home</p>
         </div>
         <div class="navlinks">
             <a href="index.html">Home</a>
@@ -18,8 +18,46 @@
         </div>
     </div>
 
+    
+    <div class="parent">
+        <div class="div2">
+            <img src="../img/computerCollossus.jpeg">
+        </div>
 
+        <div class="div1">
+            <h2>How technology improves lives and communities.</h2>
+            <p>This website explores how computing applications help solve real-world problems, from healthcare and education to environmental protection and accessibility.</p>
+            <p>Computers are used in medicine, education, and the environment to make life safer and more efficient. This website looks at real examples of how computing applications help people and communities. Our goal is to show the positive role of technology in modern society.</p>
 
+            <button class="collapsible">About</button>
+			<div class="content1">
+				<p>Sup bro</p>
+			</div>
+
+        </div>
+
+        <div class="div3"><img src="../img/oldComputer.jpeg"></div>
+        <div class="div4"><img src="../img/enigmaMachine.jpeg"></div>
+        <div class="div5"><img src="../img/beam.png"></div>
+    </div>
+    
+
+    <script type="text/javascript">
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+        });
+    }
+	</script>
 
 </body>
 </html>
