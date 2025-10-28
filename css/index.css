@@ -150,3 +150,24 @@ p {
     width: 500px;
     background-color: #8FAFCF;
 }
+
+a svg {
+    fill: black;
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px; 
+}
+
+.Aboutbox {
+    width: 45%; 
+    background-color: #f0f0f0; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.link a {
+    margin-right: 10px;
+}
