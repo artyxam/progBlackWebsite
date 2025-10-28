@@ -77,13 +77,17 @@ body {
     grid-row-start: 1;
     background-color: #8FAFCF;
 }
+.div1 p{
+    padding: 20px;
+}
+
 
 .div2 {
     grid-column-start: 1;
     grid-row-start: 1;
     background-color: #8FAFCF;
 }
-.div2 img {
+.div2 img, div1 img, .div3 img, .div4 img, .div5 img, .div6 img, .div7 img, .div8 img, .div9 img, .div10 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -137,8 +141,8 @@ body {
     background-color: #8FAFCF;
 }
 
-p {
-    color: #1e293b;
+p, h1, h2, h3, h4, h5, h6, li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
         
 .Aboutbox#arty{
