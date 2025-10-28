@@ -141,13 +141,8 @@ body {
     background-color: #8FAFCF;
 }
 
-<<<<<<< HEAD
 p, h1, h2, h3, h4, h5, h6, li {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-=======
-p {
-    color: #1e293b;
->>>>>>> 3be194984ad59c3f255f8c7ce84b5709a948ecdf
 }
         
 .Aboutbox#arty{
@@ -159,8 +154,6 @@ p {
     width: 500px;
     background-color: #8FAFCF;
 }
-<<<<<<< HEAD
-=======
 
 a svg {
     fill: black;
@@ -182,4 +175,3 @@ a svg {
 .link a {
     margin-right: 10px;
 }
->>>>>>> 3be194984ad59c3f255f8c7ce84b5709a948ecdf
