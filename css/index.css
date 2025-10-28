@@ -137,7 +137,19 @@ body {
     background-color: #8FAFCF;
 }
 
+<<<<<<< HEAD
 p {
     color: #1e293b;
 }
         
+=======
+.Aboutbox#arty{
+    width: 500px;
+    background-color: #8FAFCF;
+}
+
+.Aboutbox#harrison{
+    width: 500px;
+    background-color: #8FAFCF;
+}
+>>>>>>> f439a09d32f76798a6687fd3f0971dfc87c75554
