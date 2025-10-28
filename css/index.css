@@ -170,8 +170,40 @@ a svg {
 
 .link a {
     margin-right: 10px;
-<<<<<<< HEAD
 }
-=======
+
+.collapsible {
+  background-color: #4E81B3;
+  color: #f1f5f9;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
 }
->>>>>>> b83aa2620491824f0999a2a297fa8a9ce4362880
+
+.active, .collapsible:hover {
+  background-color: #315273;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: #f1f5f9;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content1 {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #315273;
+}
