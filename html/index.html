@@ -7,16 +7,23 @@
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
+
     <div class="topnav">
         <div class="title">
             <p>Computing Applications - Home</p>
         </div>
-        <div class="navlinks">
+
+        <div class="navlinks" id="navLinks">
             <a href="index.html">Home</a>
             <a href="applications.html">Applications</a>
             <a href="about.html">About</a>
         </div>
+
+        <div class="hamburger" id="hamburger">
+            &#9776;
+        </div>
     </div>
+
 
     
     <div class="parent">
@@ -42,22 +49,8 @@
     </div>
     
 
-    <script type="text/javascript">
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+    <script src="../javascript/script.js"></script>
 
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
-        });
-    }
-	</script>
 
 </body>
 </html>
