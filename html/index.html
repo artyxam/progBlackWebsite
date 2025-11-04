@@ -7,16 +7,24 @@
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
+
     <div class="topnav">
         <div class="title">
             <p>Computing Applications - Home</p>
         </div>
-        <div class="navlinks">
+
+        <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
+            &#9776;
+        </button>
+
+        <nav id="navLinks" class="navlinks" aria-hidden="true">
             <a href="index.html">Home</a>
             <a href="applications.html">Applications</a>
             <a href="about.html">About</a>
-        </div>
+        </nav>
     </div>
+
+
 
     
     <div class="parent">
@@ -31,8 +39,12 @@
 
             <button class="collapsible">About</button>
 			<div class="content1">
-				<p>Sup bro</p>
+				<img src="../img/TrollFace.png" alt="Troll Face" style="width:500px;height:500px;">
 			</div>
+
+            <br>
+            <h3>Listen to our favourite coding song!</h3>
+            <iframe id="music" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4UO1pfxi5fDbxshrwwznJ2?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
         </div>
 
@@ -42,22 +54,8 @@
     </div>
     
 
-    <script type="text/javascript">
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+    <script src="../javascript/script.js"></script>
 
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
-        });
-    }
-	</script>
 
 </body>
 </html>
