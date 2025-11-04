@@ -1,50 +1,97 @@
 .topnav {
-    background-color: #1e293b;
-    overflow: hidden;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+  background-color: #1e293b;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  box-sizing: border-box;
 }
 
+/* title sits at left */
+.title {
+  color: #f1f5f9;
+  font-size: 17px;
+  margin: 0;
+  flex: 1;
+}
 
-.title{
-    float: left;
-    padding-left: 10px;
-    color: #f1f5f9;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;}
+/* visible button, keyboard focus styles included */
+.hamburger {
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  color: #f1f5f9;
+  cursor: pointer;
+  padding: 6px 10px;
+  line-height: 1;
+}
 
+.hamburger:focus {
+  outline: 2px solid rgba(241,245,249,0.2);
+  outline-offset: 2px;
+}
+
+/* dropdown sits flush with right edge of viewport */
 .navlinks {
-    float: right;
+  position: fixed;
+  top: 56px; /* adjust if topnav height changes */
+  right: 0;
+  width: 280px;
+  max-width: 90vw;
+  background-color: #1e293b;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  border-left: 1px solid rgba(241,245,249,0.04);
+  overflow: hidden;
+  border-radius: 0 0 6px 6px;
+  box-sizing: border-box;
+
+  /* collapsed state */
+  max-height: 0;
+  opacity: 0;
+  transform-origin: top right;
+  transform: translateY(-8px) scaleY(0.98);
+  transition: max-height 320ms cubic-bezier(.2,.9,.2,1), opacity 220ms ease, transform 260ms cubic-bezier(.2,.9,.2,1);
+  pointer-events: none;
+}
+
+/* open state */
+.navlinks.show {
+  max-height: 720px; /* large enough for links */
+  opacity: 1;
+  transform: translateY(0) scaleY(1);
+  pointer-events: auto;
 }
 
 .navlinks a {
-    float: left;
-    color: #f1f5f9;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  display: block;
+  color: #f1f5f9;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  border-top: 1px solid rgba(241,245,249,0.02);
 }
 
+.navlinks a:first-child {
+  border-top: none;
+}
+
+.navlinks a:focus,
 .navlinks a:hover {
-    background-color: #1e293b;
-    color: #f1f5f9;
+  background-color: #273244;
+  outline: none;
 }
 
-.navlinks a.active1 {
-    background-color: #f1f5f9;
-    color: #1e293b;
+/* small screens adjustment */
+@media (max-width: 360px) {
+  .navlinks {
+    width: 200px;
+    right: 6px;
+  }
 }
-
-.navlinks a.active1:hover {
-    background-color: #1e293b;
-    color: #f1f5f9;
-}
-
 
 body {
     margin: 0;
