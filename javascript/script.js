@@ -18,7 +18,6 @@ hamburger.addEventListener('click', function(e) {
   toggleMenu();
 });
 
-/* close on link click and focus returns to button */
 document.querySelectorAll('#navLinks a').forEach(function(link) {
   link.addEventListener('click', function() {
     navLinks.classList.remove('show');
@@ -28,7 +27,6 @@ document.querySelectorAll('#navLinks a').forEach(function(link) {
   });
 });
 
-/* close when clicking outside */
 document.addEventListener('click', function(e) {
   if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
     if (navLinks.classList.contains('show')) {
@@ -39,7 +37,6 @@ document.addEventListener('click', function(e) {
   }
 });
 
-/* close with Escape key */
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape' && navLinks.classList.contains('show')) {
     navLinks.classList.remove('show');
@@ -48,3 +45,18 @@ document.addEventListener('keydown', function(e) {
     hamburger.focus();
   }
 });
+
+
+
+var coll = document.getElementsByClassName("collapsible");
+for (let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}

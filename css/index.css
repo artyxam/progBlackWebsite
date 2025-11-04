@@ -254,3 +254,8 @@ a svg {
   transition: max-height 0.2s ease-out;
   background-color: #315273;
 }
+
+.music {
+    margin-top: 20px;
+}
+
