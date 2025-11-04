@@ -266,6 +266,8 @@ a svg {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 1.5rem;
     padding: 1.5rem;
+    text-align: center;
+    background-position: center;
 }
 
 /* === Hover to Reveal Card Styles === */
@@ -351,5 +353,6 @@ a svg {
     border-radius: 8px;
     text-decoration: none;
     font-weight: 500;
-    align-self: flex-start; /* Aligns button to the left */
+    text-align: center;
+    background-position: center;
 }
